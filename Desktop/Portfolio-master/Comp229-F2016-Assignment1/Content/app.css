@@ -1,0 +1,38 @@
+﻿/*   My Custom Stylesheet                                             */
+@import url('bootstrap.min.css');
+@import url('bootstrap-theme.css');
+@import url('font-awesome.min.css');
+
+/*  Navbar Stylesheet                */
+#nav {
+    width: 750px;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+    #nav li {
+        float: left;
+    }
+
+    #nav a {
+        display: block;
+        text-align: center;
+        width: 100px; /* fixed width */
+        text-decoration: none;
+        font-size: medium;
+    }
+
+    #nav :hover {
+        font-size: 1.4em;
+        font-family: Elephant;
+    }
+
+.logo {
+    float: left;
+    width: 6%;
+    margin-top: -1%;
+}
