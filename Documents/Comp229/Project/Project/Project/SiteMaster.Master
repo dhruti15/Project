@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="Project.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Tracker</title>
+    <!-- CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+
+            <a href="#" class="nav-toggle-btn"></a>
+
+            <ul>
+                <li><a href="#">Week1</a></li>
+                <li><a href="#">Week2</a></li>
+                <li><a href="#">Week3</a></li>
+                <li><a href="#">Week4</a></li>
+            </ul>
+
+        </nav>
+        <div class="show">
+            <ul class="nav navbar-nav navbar-default navbar-right text">
+                <li><a href="#"><i class="fa fa-sign-in"></i>Sign Up </a></li>
+                <li><a href="#"><i class="fa fa-user-plus"></i>Login </a></li>
+            </ul>
+        </div>
+        <div class="game1">
+            <h1 style="text-align: center">Game1</h1>
+        </div>
+        <div class="game2">
+            <h1 style="text-align: center">Game2</h1>
+
+        </div>
+
+
+        <div class="game3">
+            <h1 style="text-align: center">Game3</h1>
+
+        </div>
+
+        <div class="game4">
+            <h1 style="text-align: center">Game4</h1>
+
+        </div>
+        <div class="footer">
+            <h4>&copy; 2016 - Dhruti Patel </h4>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+    <!-- Java Script Section -->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script type="text/javascript">
+
+        (function () {
+
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+
+            navToggleBtn.on('click', function (e) {
+                bodyEl.toggleClass('active-nav');
+                e.preventDefault();
+            });
+
+
+
+        })();
+
+
+    </script>
+
+</body>
+</html>
